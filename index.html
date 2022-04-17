@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>dem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+  <body>
+    
+    <div class="container">
+      <h2>Certificate verification KaarwaaN</h2>
+      <hr />
+      <br />
+      <div class="form">
+        RollNo: <input type="text" name="RollNo" id="roll" /> <br /><br />  
+        <!-- ADDRESS: <input type="text" name="ADDRESS" id="ADDRESS" /> <br /><br />
+        BG: <input type="text" name="BG" id="BG" /> <br /><br />
+        CERTIFICATEID: <input type="text" name="CERTIFICATEID" id="CERTIFICATEID" /> <br /><br />
+        COLLEGE: <input type="text" name="COLLEGE" id="COLLEGE" /> <br /><br />
+        CONTACT:<input type="text" name="CONTACT" id="CONTACT" /> <br /><br />
+        DOB: <input type="text" name="DOB" id="DOB" /> <br /><br />
+        EMAIL:<input type="text" name="EMAIL" id="EMAIL" /> <br /><br />
+        FATHER:<input type="text" name="FATHER" id="FATHER" /> <br /><br />
+        GENDER:<input type="text" name="GENDER" id="GENDER" /> <br /><br />
+         NAME: <input type="text" name="NAME" id="NAME" /> <br /><br />
+        POSITION: <input type="text" name="POSITION" id="POSITION" /> <br /><br />
+        SESSION: <input type="text" name="SESSION" id="SESSION" /> <br /><br />
+        VERIFIEDBY: <input type="text" name="VERIFIEDBY" id="VERIFIEDBY" /> <br /><br />
+        WORKINKWA:<input type="text" name="WORKINKWA" id="WORKINKWA" /> <br /><br /> -->
+      </div>
+
+      <div class="buttons">
+        <button id="read" class="button btn-warning">VERIFY</button>
+
+        <!-- <button id="insert">Insert</button>
+        <button id="update">Update</button>
+        <button id="delete">Delete</button> -->
+      </div>
+    </div>
+
+    <div class="popup ml-2">
+      <button id="close">&times;</button>
+      <h2>Certificate Detail
+      </h2>
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Data</th>
+              <th scope="col">Value</th>
+            </tr>
+          </thead>
+          <tbody id="result">
+           
+          </tbody>
+        </table>
+    </div>
+    <style type="text/css">
+    .popup{
+        background-color: #ffffff;
+        width: 75%;
+        padding: 30px 40px;
+        left: 50%;
+        top: 50%;
+        border-radius: 8px;
+        font-family: "Poppins",sans-serif;
+        text-align: center;
+        /* visibility: hidden; */
+         z-index: 1;
+    }
+    .popup button{
+        display: block;
+        margin:  0 0 20px auto;
+        background-color: transparent;
+        font-size: 30px;
+        color: #c5c5c5;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .popup p{
+        font-size: 14px;
+        text-align: justify;
+        margin: 20px 0;
+        line-height: 25px;
+    }
+    .pop_a{
+        display: block;
+        width: 150px;
+        position: relative;
+        margin: 10px auto;
+        text-align: center;
+        background-color: #0f72e5;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 5px 0;
+    }
+    </style>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+    <script src="./fireConfig.js"></script>
+
+    <script src="./myscript.js"></script>
+  </body>
+</html>
