@@ -2,9 +2,10 @@
 
 document.getElementById("read").onclick = function () {
   const rollV = document.getElementById("roll").value;
+   const email = document.getElementById("email").value;
   firebase
     .database()
-    .ref("ValunteerDetails/" + rollV)
+    .ref("ValunteerDetails/" + email)
     .on("value", function (snap) {
      const ADDRESS = snap.val().ADDRESS;
     const BG= snap.val().BG
